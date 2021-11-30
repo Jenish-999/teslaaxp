@@ -1,0 +1,120 @@
+﻿* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#form1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../../images/model-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-menu {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    /*background-color: #F4F9F9;*/
+    padding:0 .10rem;
+    width:100%;
+
+}
+img {
+    margin-left:1rem;
+}
+.Menu1 {
+    text-transform: uppercase;
+    padding: 1.2rem;
+    color: #fff;
+    font-size:1.2rem;
+    background-color:transparent;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+       
+}
+    .Menu1 ul li{
+        margin:0 1rem;
+        color:dimgrey;
+        transition:.4s ease-in-out;
+    }
+        .Menu1 ul li:hover {
+            font-weight:500;
+        }
+        .btn-asia {
+            padding: .70rem;
+            margin-right: 1rem;
+            border-radius: 15px;
+            border:.1px solid #999;
+            outline: none;
+            color: teal;
+            cursor: pointer;
+            background-color: transparent;
+            transition: .5s ease;
+        }
+    .btn-asia:hover {
+        background-color:gray;
+        color:azure;
+    }
+.dynamic-body {
+    padding:1.2rem;
+}
+.home-main-body {
+    text-align:center;
+    text-transform:uppercase;
+}
+.heading h4{
+    font-size:2rem;
+    text-transform:uppercase;
+    color:grey;
+    font-weight:500;
+}
+.heading p {
+    width: 45%;
+    margin: auto;
+    color: grey;
+    font-size: 1rem;
+    padding: 1.2rem;
+}
+.home-footer-content {
+    position:absolute;
+    bottom:50px;
+    width:98%;
+    margin:auto;
+}
+.home-footer-content .btn-meet, .btn-book{
+    padding:.60rem;
+    border:.1px solid #999;
+    outline:none;
+    font-size:1rem;
+    text-transform:uppercase;
+    border-radius:30px;
+    background-color:transparent;
+    cursor:pointer;
+    transition:all .5s ease-in-out;
+}
+    .home-footer-content .btn-meet:hover, .btn-book:hover {
+        background-color: #007BFF;
+        color:#fff;
+    }
+.bg-custom {
+    background-color: #f4f9f9a1 !important;
+    text-transform:uppercase;
+    font-weight:500;
+    color:dimgrey;
+}
+.footer {
+    width: 100%;
+    height: 3rem;
+    margin-top: auto;
+}
+    .footer p {
+        text-transform:uppercase;
+        line-height:3rem;
+        text-align:center;
+        color:dimgray;
+    }

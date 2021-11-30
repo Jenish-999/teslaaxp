@@ -1,0 +1,34 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="index.master.vb" Inherits="Tesla_Project.index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>TESLA</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header-menu">
+               <img src="images/logo.svg" alt="Image-Logo"/>
+               <asp:Menu ID="Menu1" runat="server" CssClass="Menu1" Orientation="Horizontal">
+                   <Items>
+                       <asp:MenuItem NavigateUrl="~/Home.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                       <asp:MenuItem NavigateUrl="~/SignUp.aspx" Text="SIGNUP" Value="SIGNUP"></asp:MenuItem>
+                       <asp:MenuItem NavigateUrl="~/Display.aspx" Text="CUSTOMERS" Value="CUSTOMERS"></asp:MenuItem>
+                   </Items>
+               </asp:Menu>
+               <asp:Button ID="btnAsia" runat="server" Text="🌐 ▼Asia" CssClass="btn-asia" />
+       </div> 
+        <div class="dynamic-body" align="top">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+               <p>Copyright &copy; 2021</p>
+        </div>
+    </form>
+</body>
+</html>
